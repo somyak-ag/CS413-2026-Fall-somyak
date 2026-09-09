@@ -219,3 +219,20 @@ Note that the keyword and is used to combine function definitions.
 
 The changes were primarily simplifications to make the Python code cleaner and more natural while preserving the behavior of the original program.
 
+
+# Testing
+
+Test 1: Normal case
+Run the eight-queens program with the initial empty board.
+Expected result:
+The program should find 92 distinct solutions.
+
+Test 2: Boundary case:
+Test `board_get` with row -1 and row 8.
+Expected result:
+Both should return -1, matching the ATS implementation.
+
+Test 3: Additional test:
+Test `board_set` by changing the queen position on row 3.
+Expected result:
+The returned board should contain the new column at row 3 while the original board remains unchanged.
