@@ -219,8 +219,7 @@ Note that the keyword and is used to combine function definitions.
 
 The changes were primarily simplifications to make the Python code cleaner and more natural while preserving the behavior of the original program.
 
-
-# Testing
+#test:
 
 Test 1: Normal case
 Run the eight-queens program with the initial empty board.
@@ -236,3 +235,866 @@ Test 3: Additional test:
 Test `board_set` by changing the queen position on row 3.
 Expected result:
 The returned board should contain the new column at row 3 while the original board remains unchanged.
+
+
+Results:
+File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 4 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 1 more time]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 3 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 5 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  [Previous line repeated 2 more times]
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
+    return search(
+        bd,
+    ...<2 lines>...
+        nsol
+    )
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 61, in search
+    return search(bd1, i + 1, 0, nsol)
+  File "/Users/somyak/Desktop/CS-330/queens.py", line 63, in search
+    return search(bd, i, j + 1, nsol) 
+
+........ and more
+
+Test passed!
