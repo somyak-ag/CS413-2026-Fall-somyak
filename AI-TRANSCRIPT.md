@@ -1097,4 +1097,4 @@ File "/Users/somyak/Desktop/CS-330/queens.py", line 66, in search
 
 ........ and more
 
-Test passed!
+"RecursionError: maximum recursion depth exceeded"
